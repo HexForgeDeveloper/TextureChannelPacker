@@ -1,0 +1,27 @@
+# Unreal generated files and packaged binaries
+/Binaries/
+/Intermediate/
+/Saved/
+/DerivedDataCache/
+
+# IDE files
+/.vs/
+/.idea/
+*.sln
+*.suo
+*.VC.db
+*.VC.opendb
+*.code-workspace
+
+# Compiler output
+*.obj
+*.pch
+*.pdb
+*.dll
+*.lib
+*.exp
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
