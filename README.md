@@ -12,15 +12,22 @@ It reads editor source pixels and creates uniquely named texture assets.
 
 ## Requirements and installation
 
-Validated configuration: **Unreal Engine 5.5, Windows x64**. This is an editor-only
-plugin. Other engines and platforms have not been validated and are not enabled
-in the distribution descriptor.
+This is an editor-only plugin for Unreal Engine 5. Compatibility is maintained in
+engine-specific branches as new engine versions are supported.
+
+- `5.5`: available and validated on Windows x64.
+- `5.6`, `5.7` and later: planned; availability and validation will be documented
+  when each version branch is published.
+
+`main` is the development branch. Use the branch matching your project's Unreal
+Engine version. Precompiled packages must also match the engine version and
+platform. The current `5.5` distribution targets Windows x64.
 
 For a source installation, close Unreal Editor and clone this repository into your
 project's plugin directory:
 
 ```powershell
-git clone https://github.com/HexForgeDeveloper/TextureChannelPacker.git "<YourProject>/Plugins/TextureChannelPacker"
+git clone --branch 5.5 https://github.com/HexForgeDeveloper/TextureChannelPacker.git "<YourProject>/Plugins/TextureChannelPacker"
 ```
 
 Alternatively, copy the complete `TextureChannelPacker` folder into
@@ -44,7 +51,7 @@ repository records the plugin commit, so everyone on the project uses the same
 version. Run these commands from the project root, beside the `.uproject` file:
 
 ```powershell
-git submodule add https://github.com/HexForgeDeveloper/TextureChannelPacker.git Plugins/TextureChannelPacker
+git submodule add -b 5.5 https://github.com/HexForgeDeveloper/TextureChannelPacker.git Plugins/TextureChannelPacker
 git add .gitmodules Plugins/TextureChannelPacker
 git commit -m "Add TextureChannelPacker plugin submodule"
 ```
@@ -78,7 +85,9 @@ parent repository:
 git submodule update --init --recursive
 ```
 
-To update the plugin to the latest commit of its remote default branch, close
+The examples above select `5.5`; use the matching version branch when it becomes available.
+
+To update the plugin to the latest commit of its configured version branch, close
 Unreal Editor and run:
 
 ```powershell
