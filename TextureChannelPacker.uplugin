@@ -6,16 +6,11 @@
 	"Description": "Editor tools for packing, remapping and extracting texture channels with source-format-aware previews and reusable presets.",
 	"Category": "Editor",
 	"CreatedBy": "DimAlek",
-	"CreatedByURL": "",
-	"DocsURL": "",
 	"MarketplaceURL": "",
 	"SupportURL": "",
 	"EngineVersion": "5.5.0",
 	"CanContainContent": false,
 	"Installed": true,
-	"SupportedTargetPlatforms": [
-		"Win64"
-	],
 	"Modules": [
 		{
 			"Name": "TextureChannelPacker",
@@ -33,5 +28,8 @@
 				"Win64"
 			]
 		}
+	],
+	"SupportedTargetPlatforms": [
+		"Win64"
 	]
 }
