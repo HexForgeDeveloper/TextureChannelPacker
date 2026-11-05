@@ -171,7 +171,7 @@ void STextureChannelPackerWidget::Construct(const FArguments& InArgs)
 																	BuildUnpackSettings()
 																]
 														]
-
+														
 														+ SVerticalBox::Slot()
 														.AutoHeight()
 														.Padding(0.0f, 12.0f)
